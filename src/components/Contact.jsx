@@ -8,13 +8,13 @@ export const Contact = ({id, name, number, onDelete}) => {
 
     return (
         <div className="contact">
-            <Link className="contact__items" to={`/${id}`}>
+            <Link className="contact__items" to={`/contact/${id}`}>
                 <span className="items__single">{name}</span>
                 <span className="items__single">{number}</span>
             </Link>
             <div className="contact__buttons">
                 <FaTrashCan onClick={onDelete} className="items__icon items__icon--delete"/>
-                <Link to={`${id}`}>
+                <Link className="edit__btn" to={`/edit/${id}`}>
                     <FaPen className="items__icon items__icon--edit"/>
                 </Link>
             </div>
