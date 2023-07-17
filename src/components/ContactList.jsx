@@ -27,7 +27,7 @@ export const ContactList = () => {
     }, [])
 
     const handleDelete = (id) => {
-        axios.delete(`http://localhost:3000/conasdasdtacts/${id}`)
+        axios.delete(`http://localhost:3000/contacts/${id}`)
             .then(response => {
                 setContacts(contacts.filter((contact) => contact.id !== id));
             })
