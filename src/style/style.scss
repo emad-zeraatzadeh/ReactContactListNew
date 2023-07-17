@@ -265,9 +265,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     .form__edit-input {
-      margin-right: 10px;
+      margin-bottom: 20px;
       padding: 5px 10px;
       border-radius: 5px;
       border: none;
@@ -278,35 +279,39 @@ body {
       }
     }
 
-    .form__edit__acc {
-      border: none;
-      background-color: transparent;
-      margin-right: 10px;
+    .form__buttons {
       display: flex;
-      align-items: center;
-      justify-content: center;
-    }
 
-    .form__icon {
-      font-size: 2.2rem;
-      cursor: pointer;
-      transition: 0.2s ease;
-
-      &:last-child {
-        margin-right: 0;
+      .form__edit__acc {
+        border: none;
+        background-color: transparent;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
-      &:hover {
-        transform: translateY(-2px);
+      .form__icon {
+        font-size: 2.2rem;
+        cursor: pointer;
+        transition: 0.2s ease;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          transform: translateY(-2px);
+        }
       }
-    }
 
-    .form__icon--green {
-      color: #1c9806;
-    }
+      .form__icon--green {
+        color: #1c9806;
+      }
 
-    .form__icon--red {
-      color: $red;
+      .form__icon--red {
+        color: $red;
+      }
     }
   }
 
